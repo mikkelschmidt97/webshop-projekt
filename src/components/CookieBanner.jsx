@@ -71,7 +71,9 @@ function CookieBanner() {
       <div className={styles.banner}>
         <div className={styles.bannerContent}>
           <div className={styles.bannerLeft}>
-            <FaCookie className={styles.cookieIcon} />
+            <div className={styles.iconWrapper}>
+              <FaCookie className={styles.cookieIcon} />
+            </div>
             <div className={styles.textContent}>
               <h3>Vi respekterer dit privatliv</h3>
               <p>

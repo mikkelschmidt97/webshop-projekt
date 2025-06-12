@@ -39,13 +39,21 @@
   flex: 1;
 }
 
-.cookieIcon {
-  color: white;
-  font-size: 1.5rem;
+.iconWrapper {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 1rem;
-  border-radius: 16px;
+  border-radius: 20px;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookieIcon {
+  font-size: 3rem;
+  color: white;
+  z-index: 2;
+  position: relative;
 }
 
 .textContent h3 {
@@ -369,13 +377,29 @@ input:disabled + .slider.disabled {
     text-align: center;
   }
 
+  .iconWrapper {
+    padding: 0.75rem;
+    border-radius: 12px;
+  }
+
+  .cookieIcon {
+    font-size: 2rem;
+  }
+
   .bannerLeft {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .textContent {
+    text-align: center;
+  }
+
+  .textContent h3 {
+    font-size: 1.1rem;
   }
 
   .textContent p {
-    max-width: 100%;
+    font-size: 0.9rem;
   }
 }
