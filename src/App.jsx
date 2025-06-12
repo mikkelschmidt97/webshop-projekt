@@ -67,11 +67,12 @@ function AppRoutes() {
 // Selve app-komponenten – wrapper hele appen i en Router
 function App() {
   return (
-    <Router>
+    <Router basename="/webshop-projekt">
       <div className={styles.app}>
         <AppRoutes />
       </div>
     </Router>
+
   );
 }
 
