@@ -66,10 +66,15 @@ function BurgerMenu({ open, setOpen, categories = [] }) {
       <nav className={styles.menu} onClick={e => e.stopPropagation()}>
         {/* Top-bar med logo og luk-knap */}
         <div className={styles.header}>
-          <div className={styles.logo}>
-            <div className={styles.logoIcon}>HB</div>
-            <span>HardwareByen</span>
-          </div>
+          <Link to="/" className={styles.logo} onClick={() => setOpen(false)}>
+            <img
+              src="/webshop-projekt/logo.png"
+              alt="HardwareByen logo"
+              className={styles.logoImage}
+            />
+            <span className={styles.logoText}>HardwareByen</span>
+          </Link>
+
           <button
             className={styles.closeButton}
             onClick={() => setOpen(false)}

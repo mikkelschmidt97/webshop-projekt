@@ -347,3 +347,35 @@ input:disabled + .slider.disabled {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
+
+@media (max-width: 768px) {
+  .bannerContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .bannerActions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .preferencesBtn,
+  .acceptNecessaryBtn,
+  .acceptAllBtn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bannerLeft {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .textContent p {
+    max-width: 100%;
+  }
+}

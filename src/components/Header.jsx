@@ -39,16 +39,14 @@ function Header() {
           
           {/* Logo (link til forsiden) */}
           <div className={styles.logoSection}>
-          <Link to="/" className={styles.logo}>
-            <img
-              src="/webshop-projekt/logo.png"
-              alt="HardwareByen logo"
-              className={styles.logoImage}
-            />
-            <span className={styles.logoText}>HardwareByen</span>
-          </Link>
-
-
+            <Link to="/" className={styles.logo}>
+              <img
+                src="/webshop-projekt/logo.png"
+                alt="HardwareByen logo"
+                className={styles.logoImage}
+              />
+              <span className={styles.logoText}>HardwareByen</span>
+            </Link>
           </div>
 
           {/* Navigation til desktop */}
