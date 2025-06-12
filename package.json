@@ -1,7 +1,7 @@
 {
   "name": "webshop-projekt",
-  "private": false,
-  "homepage": "https://mikkelschmidt97.github.io/webshop-projekt",
+  "homepage": "https://mikkelschmidt97.github.io/webshop-projekt/",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
