@@ -41,7 +41,7 @@ function Header() {
           <div className={styles.logoSection}>
           <Link to="/" className={styles.logo}>
             <img
-              src="/logo.png"
+              src="\public\logo.png"
               alt="HardwareByen logo"
               className={styles.logoImage}
             />
