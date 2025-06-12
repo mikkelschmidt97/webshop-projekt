@@ -63,3 +63,4 @@ useEffect(() => {
 ### Note
 
 Jeg har valgt at skifte farve designet, da jeg simpelthen ikke var tilfreds med det farve design som vi sammen havde valgt i gruppen.
+Udover dette har jeg valgt at bruge hjemmeside navn og information fra min tidligere webshop da vi havde Jørn. ("HardwareByen")
