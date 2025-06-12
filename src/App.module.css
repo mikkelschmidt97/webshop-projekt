@@ -1,0 +1,90 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f8fbff 0%, #f0f7ff 100%);
+  position: relative;
+}
+
+/* Skip link for accessibility */
+.skipLink {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #667eea;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 10000;
+  font-weight: 600;
+  transition: top 0.3s ease;
+}
+
+.skipLink:focus {
+  top: 6px;
+}
+
+/* Main content area */
+.main {
+  flex: 1;
+  width: 100%;
+  min-height: calc(100vh - 70px); /* Account for header height */
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    min-height: calc(100vh - 60px);
+  }
+
+  .skipLink {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+/* Performance optimizations */
+.app * {
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus management */
+.app:focus-within {
+  scroll-behavior: auto;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .skipLink {
+    transition: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .skipLink {
+    display: none;
+  }
+
+  .app {
+    background: white;
+  }
+
+  .main {
+    min-height: auto;
+  }
+}

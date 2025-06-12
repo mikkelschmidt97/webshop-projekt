@@ -1,0 +1,23 @@
+.aboutSection {
+    max-width: 650px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(40,96,130,0.08);
+    padding: 2.2rem 2.5rem 2.5rem 2.5rem;
+    text-align: center;
+  }
+  .aboutSection h2 {
+    color: #214766;
+    margin-bottom: 1.2rem;
+  }
+  .aboutSection p {
+    color: #445979;
+    font-size: 1.13rem;
+    line-height: 1.7;
+  }
+  @media (max-width: 600px) {
+    .aboutSection {
+      padding: 1.1rem;
+    }
+  }
